@@ -60,6 +60,7 @@ main {
   height: 30.2rem;
   position: absolute;
   opacity: 0%;
+  transition: opacity 0.2s;
 
   @media screen and (max-width: 375px) {
     width: 27.8rem;
