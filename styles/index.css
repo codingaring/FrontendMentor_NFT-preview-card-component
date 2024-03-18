@@ -28,3 +28,166 @@ body {
   background-color: var(--Very-Dark-Blue-main);
   font-size: 1.8rem;
 }
+
+main {
+  width: 35rem;
+  background-color: var(--Very-Dark-Blue-card);
+  border-radius: 1.5rem;
+  box-shadow: 0px 25px 50px 0px var(--Very-Dark-Blue-card);
+  margin-top: 15.2rem;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  padding: 2.4rem;
+
+  @media screen and (max-width: 375px) {
+    width: 32.7rem;
+    margin-top: 6.2rem;
+  }
+}
+
+/** detailed style **/
+.cover-image-container {
+  position: relative;
+}
+
+.view-icon {
+  background-color: rgb(0, 255, 248, 0.503);
+  background-image: url("/images/icon-view.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+  width: 30.2rem;
+  height: 30.2rem;
+  position: absolute;
+  opacity: 0%;
+
+  @media screen and (max-width: 375px) {
+    width: 27.8rem;
+    height: 27.8rem;
+  }
+}
+
+.view-icon:hover {
+  opacity: 100%;
+}
+
+.NFT-cover-image {
+  width: 30.2rem;
+  height: 30.2rem;
+  border-radius: 0.8rem;
+
+  @media screen and (max-width: 375px) {
+    width: 27.8rem;
+    height: 27.8rem;
+  }
+}
+
+.NFT-name {
+  color: var(--White);
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+.NFT-name:hover {
+  color: var(--Cyan);
+  margin-top: 2.4rem;
+}
+
+.NFT-description {
+  color: var(--Soft-Blue);
+  margin-top: 1.6rem;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 1.2rem;
+  }
+}
+
+/** NFT-information-container **/
+.NFT-information-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0;
+
+  @media screen and (max-width: 375px) {
+    margin: 1.6rem 0;
+  }
+}
+
+.how-ethereum,
+.createdAt {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  color: var(--Cyan);
+}
+
+.ethereum-icon {
+  background-image: url("/images/icon-ethereum.svg");
+  width: 1.1rem;
+  height: 1.8rem;
+}
+
+.createdAt {
+  color: var(--Soft-Blue);
+}
+
+.clock-icon {
+  background-image: url("/images/icon-clock.svg");
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/** **/
+.line {
+  height: 0.1rem;
+  background-color: var(--Very-Dark-Blue-line);
+}
+
+/** creator-information **/
+.creator-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 2.2rem;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 1.6rem;
+  }
+}
+
+.creator-profile {
+  background-image: url("/images/image-avatar.png");
+  background-size: cover;
+  width: 3.3rem;
+  height: 3.3rem;
+  border: 0.1rem solid var(--White);
+  border-radius: 50%;
+}
+
+.creation-of {
+  color: var(--Soft-Blue);
+  margin-right: 0.5rem;
+}
+
+.creator-name {
+  color: var(--White);
+}
+
+.creator-name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+/** other **/
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
